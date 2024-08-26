@@ -1,0 +1,24 @@
+Mở terminal trong vscode: ctrl + `
+
+* Các câu lệnh: 
+- Khởi tạo git trong project:
+    git init
+
+- Thêm tất cả các file có nội dung mới hoặc thay đổi vào staged || Gom code vào 1 hộp
+    git add .
+
+- Đóng gói các file đã được gom lại
+    git commit -m "nội dung gì đấy"
+
+- Đẩy code lên remote branch
+    git push -u
+
+* Màu file:
+- Xanh lá: File mới, code mới
+- Vàng: File được sửa lại
+- Đỏ: File lỗi code
+
+* Quy trình đẩy code:
+- git add .
+- git commit -m ""
+- git push -u
