@@ -22,3 +22,10 @@ Mở terminal trong vscode: ctrl + `
 - git add .
 - git commit -m ""
 - git push -u
+
+* Quy trình lấy code:
+- Vào repository github
+- Copy link https
+- Mở 1 thư mục trong máy để chứa code
+- Mở cmd
+- Chạy lệnh git clone + link https
