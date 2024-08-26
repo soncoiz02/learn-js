@@ -29,3 +29,6 @@ Mở terminal trong vscode: ctrl + `
 - Mở 1 thư mục trong máy để chứa code
 - Mở cmd
 - Chạy lệnh git clone + link https
+
+* Lấy code mới nhất:
+- git pull
