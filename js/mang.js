@@ -45,13 +45,13 @@ console.log(clothes[clothesLength - 1]);
 // Bước 3: thực các phép tính với những giá trị thích hợp
 
 // Tính tổng của các giá trị trong mảng sau: [1,15,2,66,17]
-let tong = 0;
-const arr = [1, 15, 2, 66, 17];
-for (let i = 0; i < arr.length; i++) {
-  let giaTri = arr[i];
-  tong = tong + giaTri;
-}
-console.log(tong);
+// let tong = 0;
+// const arr = [1, 15, 2, 66, 17];
+// for (let i = 0; i < arr.length; i++) {
+//   let giaTri = arr[i];
+//   tong = tong + giaTri;
+// }
+// console.log(tong);
 // Giải thích:
 // i: chỉ số của các phần tử trong mảng
 // giaTri: giá trị của phần tử trong mảng tương ứng với chỉ số của nó
@@ -67,3 +67,10 @@ console.log(tong);
 // Bài tập: +, -, x, :
 // Note: nhân, chia thì giá trị ban đầu = 1
 // cộng, trừ thì giá trị ban đầu = 0
+
+// const arr = [1, 15, 2, 66, 17];
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] % 2 != 0) {
+//     console.log(arr[i]);
+//   }
+// }

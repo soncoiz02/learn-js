@@ -88,3 +88,12 @@ if (test) {
 } else {
   console.log("Biến không có giá trị");
 }
+
+// Điều kiện rút gọn
+// Cú pháp: condition ? true statement : false statement
+// condition: câu lệnh điều kiện
+// true statement: câu lệnh khi điều kiện đúng
+// false statement: câu lệnh khi điều kiện sai
+
+const emAnComChua = true;
+emAnComChua ? console.log("Em ăn cơm rồi") : console.log("Em chưa ăn cơm");

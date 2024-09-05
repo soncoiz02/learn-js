@@ -1,3 +1,4 @@
+// Biến: lưu trữ 1 giá trị bất kỳ
 // Các cách khai báo biến
 // Lưu ý: tên biến chỉ được khai báo 1 lần không được trùng
 // Sử dụng var
