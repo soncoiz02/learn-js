@@ -56,6 +56,7 @@
 //   //   el.style.background = "red";
 // });
 
+const emailInput = document.getElementById("email");
 const usernameInput = document.getElementById("username");
 const passwordInput = document.getElementById("password");
 
@@ -63,12 +64,78 @@ const loginBtn = document.getElementById("btn-login");
 
 const showPassBtn = document.getElementById("show-password");
 
+// ============================================================
+
+const emailErr = document.querySelector(".email-error");
+const usernameErr = document.querySelector(".username-error");
+const passwordErr = document.querySelector(".password-error");
+
+// regex
+const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+const usernameRegex = /^(?=[a-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$/;
+
+const validateRequired = (value) => {
+  if (value.trim() == "") {
+    return false;
+  }
+  return true;
+};
+
+const resetErrors = () => {
+  emailErr.innerHTML = "";
+  usernameErr.innerHTML = "";
+  passwordErr.innerHTML = "";
+};
+
+const validate = (data) => {
+  let isError = false;
+  resetErrors();
+  const { email, username, password } = data; // destructering
+
+  // validate email
+  if (validateRequired(email) == false) {
+    emailErr.innerHTML = "Chưa nhập email";
+    isError = true;
+  } else if (emailRegex.test(email) === false) {
+    emailErr.innerHTML = "Sai định dạng email";
+    isError = true;
+  }
+
+  // validate username
+  if (validateRequired(username) == false) {
+    usernameErr.innerHTML = "Chưa nhập username";
+    isError = true;
+  } else if (usernameRegex.test(username) == false) {
+    usernameErr.innerHTML = "Username có độ dài từ 8-20 ký tự và không chứa ký tự đặc biệt";
+    isError = true;
+  }
+
+  // validate password
+  if (validateRequired(password) == false) {
+    passwordErr.innerHTML = "Chưa nhập password";
+    isError = true;
+  }
+
+  return isError;
+};
+
 loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
   const username = usernameInput.value;
   const password = passwordInput.value;
-  console.log({ username, password });
+  const email = emailInput.value;
+
+  const loginData = {
+    username: username,
+    password: password,
+    email: email,
+  };
+
+  const isValidate = validate(loginData);
+  if (isValidate == true) return;
+
+  console.log(loginData);
 });
 
 let isShow = false;
@@ -83,3 +150,27 @@ showPassBtn.addEventListener("click", (e) => {
     isShow = false;
   }
 });
+
+// IIFE function
+(function () {
+  const listInputs = [
+    {
+      inputEl: emailInput,
+      error: emailErr,
+    },
+    {
+      inputEl: usernameInput,
+      error: usernameErr,
+    },
+    {
+      inputEl: passwordInput,
+      error: passwordErr,
+    },
+  ];
+
+  listInputs.forEach((item) => {
+    item.inputEl.addEventListener("keydown", (event) => {
+      item.error.innerHTML = "";
+    });
+  });
+})();

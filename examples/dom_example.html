@@ -19,13 +19,33 @@
         height: 300px;
         border: 1px solid;
       }
+
+      .input-field {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .input-field span {
+        font-size: 14px;
+        color: red;
+      }
     </style>
   </head>
   <body>
     <!-- <div class="area"></div> -->
     <form>
-      <input type="text" id="username" placeholder="Username" />
-      <input type="password" id="password" placeholder="Password" />
+      <div class="input-field">
+        <input type="text" id="email" placeholder="Email" />
+        <span class="email-error"></span>
+      </div>
+      <div class="input-field">
+        <input type="text" id="username" placeholder="Username" />
+        <span class="username-error"></span>
+      </div>
+      <div class="input-field">
+        <input type="password" id="password" placeholder="Password" />
+        <span class="password-error"></span>
+      </div>
       <button id="show-password">Hiển thị mật khẩu</button>
       <button id="btn-login">Đăng nhập</button>
     </form>
