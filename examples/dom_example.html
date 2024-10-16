@@ -3,52 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
-    <style>
-      body {
-        display: flex;
-        justify-content: center;
-      }
-      form {
-        display: flex;
-        flex-direction: column;
-        padding: 30px;
-      }
-      .area {
-        width: 300px;
-        height: 300px;
-        border: 1px solid;
-      }
-
-      .input-field {
-        display: flex;
-        flex-direction: column;
-      }
-
-      .input-field span {
-        font-size: 14px;
-        color: red;
-      }
-    </style>
   </head>
   <body>
-    <!-- <div class="area"></div> -->
-    <form>
-      <div class="input-field">
-        <input type="text" id="email" placeholder="Email" />
-        <span class="email-error"></span>
+    <header>
+      <div class="container">
+        <div class="logo"></div>
+        <div class="nav">
+          <a href="#" class="link active">Home</a>
+          <a href="#" class="link">Order</a>
+          <a href="#" class="link">About</a>
+        </div>
+        <div class="user-actions">
+          <div class="icon-btn">
+            <i class="fa-solid fa-cart-plus"></i>
+          </div>
+          <div class="icon-btn">
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
       </div>
-      <div class="input-field">
-        <input type="text" id="username" placeholder="Username" />
-        <span class="username-error"></span>
+    </header>
+    <main>
+      <div class="container">
+        <div class="sidebar">
+          <div class="filter-list">
+            <div class="filter-type">
+              <h2 class="filter-title">Categories</h2>
+              <div class="list-cate"></div>
+            </div>
+            <div class="filter-type">
+              <h2 class="filter-title">Price</h2>
+              <div class="price-select">
+                <p class="money-label">0$</p>
+                <input type="range" />
+              </div>
+            </div>
+            <div class="filter-type">
+              <h2 class="filter-title">Rated</h2>
+              <div class="list-rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="list-products">
+          <div class="search-bar">
+            <input type="text" placeholder="Search..." />
+            <div class="search-btn">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="products">
+            <div class="list">
+              <div class="item">
+                <div class="img"></div>
+                <div class="line">
+                  <p class="name">Calic Bread</p>
+                  <p class="price">$89</p>
+                </div>
+                <div class="line">
+                  <p class="short-desc">“Corn Cheese Bread - 2 Pack”</p>
+                  <div class="rating">
+                    <p>5.0</p>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="line">
+                  <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Los Angeles, CA</p>
+                  </div>
+                  <div class="order-btn">Order</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img"></div>
+                <div class="line">
+                  <p class="name">Calic Bread</p>
+                  <p class="price">$89</p>
+                </div>
+                <div class="line">
+                  <p class="short-desc">“Corn Cheese Bread - 2 Pack”</p>
+                  <div class="rating">
+                    <p>5.0</p>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="line">
+                  <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Los Angeles, CA</p>
+                  </div>
+                  <div class="order-btn">Order</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="img"></div>
+                <div class="line">
+                  <p class="name">Calic Bread</p>
+                  <p class="price">$89</p>
+                </div>
+                <div class="line">
+                  <p class="short-desc">“Corn Cheese Bread - 2 Pack”</p>
+                  <div class="rating">
+                    <p>5.0</p>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+                <div class="line">
+                  <div class="address">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Los Angeles, CA</p>
+                  </div>
+                  <div class="order-btn">Order</div>
+                </div>
+              </div>
+            </div>
+            <div class="pagination">
+              <button class="pagi-btn active">1</button>
+              <button class="pagi-btn">2</button>
+              <button class="pagi-btn">3</button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="input-field">
-        <input type="password" id="password" placeholder="Password" />
-        <span class="password-error"></span>
-      </div>
-      <button id="show-password">Hiển thị mật khẩu</button>
-      <button id="btn-login">Đăng nhập</button>
-    </form>
+    </main>
+
     <script src="./dom_example.js"></script>
   </body>
 </html>
