@@ -206,6 +206,8 @@ main .container .list-products .products .list .item .img {
   height: 200px;
   border-radius: 14px;
   background: #cdcdcd;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .container .list-products .products .list .item .line {
   display: flex;
