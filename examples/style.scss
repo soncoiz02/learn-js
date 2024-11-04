@@ -101,6 +101,7 @@ main {
       top: 0;
       left: 0;
       width: 30%;
+      padding-right: 30px;
 
       .filter-list {
         display: flex;
@@ -150,7 +151,62 @@ main {
               }
             }
           }
+
+          .price-select {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            input {
+              width: 100%;
+              cursor: pointer;
+            }
+
+            .price-label {
+              font-size: 18px;
+              font-weight: 600;
+              color: #ff4a4a;
+            }
+          }
+
+          .list-rate {
+            display: flex;
+            align-items: center;
+            gap: 0 10px;
+
+            input {
+              display: none;
+
+              &:checked + label {
+                color: #ffda7b;
+              }
+            }
+
+            label {
+              color: #cdcdcd;
+              cursor: pointer;
+              font-size: 18px;
+
+              &.active {
+                color: #ffda7b;
+              }
+            }
+          }
         }
+      }
+
+      .clear-btn {
+        width: 100%;
+        border-radius: 50px;
+        padding: 15px 30px;
+        background: #ff4a4a;
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        cursor: pointer;
+        margin-top: 20px;
       }
     }
 

@@ -249,3 +249,77 @@ listCateBtn.forEach((el, index) => {
     renderProducts(filterProduct);
   });
 });
+
+// ===========================================================
+
+const renderRatedStar = () => {
+  const starArr = [1, 2, 3, 4, 5];
+
+  const starEl = starArr
+    .map((star) => {
+      return `
+      <div class="star">
+        <input class="star-radio" type="checkbox" id="star-${star}" value="${star}" name="rated" />
+        <label for="star-${star}">
+          <i class="fa-solid fa-star"></i>
+        </label>
+      </div>
+    `;
+    })
+    .join("");
+
+  const listStarEl = document.querySelector(".list-rate");
+  listStarEl.innerHTML = starEl;
+};
+
+renderRatedStar();
+
+const listStarBtn = document.querySelectorAll(".star-radio");
+
+const activeStar = (targetStar) => {
+  if (targetStar === 0) return;
+  for (let i = 0; i < listStarBtn.length; i++) {
+    listStarBtn[i].checked = i < targetStar ? true : false;
+  }
+};
+
+activeStar(1);
+
+listStarBtn.forEach((el) => {
+  el.addEventListener("change", (e) => {
+    const targetStar = +e.target.value;
+    activeStar(targetStar);
+    const filterProduct = listProducts.filter((item) => item.rate === targetStar);
+    renderProducts(filterProduct);
+  });
+});
+
+// =====================================================================
+const priceRangeInput = document.querySelector("#price-range");
+const priceLabel = document.querySelector(".price-label");
+
+const changePriceLabel = (value) => {
+  priceLabel.innerHTML = value + "$";
+};
+
+priceRangeInput.addEventListener("input", (e) => {
+  const priceValue = +e.target.value;
+  changePriceLabel(priceValue);
+});
+
+priceRangeInput.addEventListener("change", (e) => {
+  const priceValue = +e.target.value;
+  const filterProduct = listProducts.filter((item) => item.price <= priceValue);
+  renderProducts(filterProduct);
+});
+
+// =================================================================
+// Xử lý nút xóa lọc
+
+const clearBtn = document.querySelector(".clear-btn");
+clearBtn.addEventListener("click", (e) => {
+  renderProducts(listProducts);
+  activeStar(1);
+  priceRangeInput.value = 0;
+  changePriceLabel(0);
+});

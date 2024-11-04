@@ -93,6 +93,7 @@ main .container .sidebar {
   top: 0;
   left: 0;
   width: 30%;
+  padding-right: 30px;
 }
 main .container .sidebar .filter-list {
   display: flex;
@@ -137,6 +138,52 @@ main .container .sidebar .filter-list .filter-type .list-cate button:hover {
   border-color: #ff4a4a;
   color: #ff4a4a;
   background: rgba(255, 74, 74, 0.0588235294);
+}
+main .container .sidebar .filter-list .filter-type .price-select {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+main .container .sidebar .filter-list .filter-type .price-select input {
+  width: 100%;
+  cursor: pointer;
+}
+main .container .sidebar .filter-list .filter-type .price-select .price-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff4a4a;
+}
+main .container .sidebar .filter-list .filter-type .list-rate {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+main .container .sidebar .filter-list .filter-type .list-rate input {
+  display: none;
+}
+main .container .sidebar .filter-list .filter-type .list-rate input:checked + label {
+  color: #ffda7b;
+}
+main .container .sidebar .filter-list .filter-type .list-rate label {
+  color: #cdcdcd;
+  cursor: pointer;
+  font-size: 18px;
+}
+main .container .sidebar .filter-list .filter-type .list-rate label.active {
+  color: #ffda7b;
+}
+main .container .sidebar .clear-btn {
+  width: 100%;
+  border-radius: 50px;
+  padding: 15px 30px;
+  background: #ff4a4a;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
 }
 main .container .list-products {
   position: relative;
