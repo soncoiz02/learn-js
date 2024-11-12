@@ -219,6 +219,7 @@ main .container .list-products .search-bar .search-btn {
   color: white;
   border-radius: 50%;
   cursor: pointer;
+  border: none;
 }
 main .container .list-products .products {
   position: relative;
