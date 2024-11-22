@@ -1,0 +1,178 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "slug": "breads",
+      "name": "Breads",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": 2,
+      "slug": "burgers",
+      "name": "Burgers",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272035/sfood%20icon/burger_yoderw.svg"
+    },
+    {
+      "id": 3,
+      "slug": "fried-chicken",
+      "name": "Fried Chicken",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272035/sfood%20icon/chicken-leg_gjm0gn.svg"
+    },
+    {
+      "id": 4,
+      "slug": "ice-cream",
+      "name": "Ice Cream",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272035/sfood%20icon/ice-cream_u6s3oe.svg"
+    },
+    {
+      "id": 5,
+      "slug": "pizzas",
+      "name": "Pizzas",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/pizza-slice_lozvk0.svg"
+    },
+    {
+      "id": 6,
+      "slug": "sandwiches",
+      "name": "Sandwiches",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272035/sfood%20icon/burger_yoderw.svg"
+    },
+    {
+      "id": 7,
+      "slug": "sausages",
+      "name": "Sausages",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": 8,
+      "slug": "steaks",
+      "name": "Steaks",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/meat_ofl3t6.svg"
+    },
+    {
+      "id": 9,
+      "slug": "drink",
+      "name": "Drink",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272081/sfood%20icon/cola_wchkd1.svg"
+    },
+    {
+      "id": "55fc",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "0f87",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "4257",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "aa93",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "slug": "test",
+      "name": "HA AN BUOi",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg",
+      "id": "ce54"
+    },
+    {
+      "id": "33bb",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "9e6f",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "1e79",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "30af",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "b805",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "7baa",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "038f",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "59b9",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "9206",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "6e2b",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "ca0f",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "0fb9",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "0020",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "3dbf",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    },
+    {
+      "id": "f00a",
+      "slug": "test",
+      "name": "Test",
+      "icon": "https://res.cloudinary.com/dyjj7r0o4/image/upload/v1689272036/sfood%20icon/sandwich_1_jtm3nt.svg"
+    }
+  ]
+}
