@@ -1,0 +1,102 @@
+body {
+  background: rgb(33, 32, 41);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    padding: 30px;
+    border-radius: 12px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+
+    h1 {
+      margin: 0;
+    }
+
+    .form {
+      display: flex;
+      gap: 0 10px;
+
+      input {
+        padding: 8px 12px;
+        border-radius: 6px;
+        outline: none;
+        border: 1px solid rgb(181, 181, 181);
+      }
+
+      .btn-add {
+        padding: 8px 20px;
+        border-radius: 6px;
+        background: rgb(153, 165, 255);
+        outline: none;
+        border: none;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+          background: rgb(108, 125, 251);
+        }
+      }
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 14px;
+
+      .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 5px;
+
+        p {
+          width: 80%;
+          text-align: left;
+          margin: 0;
+          pointer-events: none;
+
+          &.done {
+            text-decoration: line-through;
+          }
+        }
+
+        input {
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+        }
+
+        button {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: rgb(228, 92, 120);
+          color: white;
+          font-weight: 600;
+          border: none;
+          border-radius: 6px;
+          outline: none;
+          cursor: pointer;
+
+          &:hover {
+            background: crimson;
+          }
+        }
+      }
+    }
+  }
+}
